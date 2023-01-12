@@ -6,10 +6,10 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="emulator" value="false"/>
-    <parameter name="platformVersion" value="11"/>
-    <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="emulator-5554"/>
-    <parameter name="deviceName" value="ABC"/>
+    <parameter name="platformVersion" value="16.11"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="udid" value="00008101-001A2C123CDB001E"/>
+    <parameter name="deviceName" value="iPhone 12 Pro"/>
     <classes>
       <class name="com.qa.tests.LoginTests">
         <methods>

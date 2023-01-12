@@ -9,10 +9,56 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,846</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">848</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.tests.LoginTests</td><td><a href="#m0">invalidUserName</a></td><td rowspan="1">1673522135368</td><td rowspan="1">7412</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.qa.tests.LoginTests</td><td><a href="#m0">beforeTest</a></td><td rowspan="1">1673542518974</td><td rowspan="1">812</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="7">com.qa.tests.LoginTests</td><td><a href="#m1">afterClass</a></td><td rowspan="1">1673542519815</td><td rowspan="1">-1673542519815</td></tr><tr class="skippedeven"><td><a href="#m2">afterMethod</a></td><td rowspan="2">1673542519814</td><td rowspan="2">-1673542519814</td></tr><tr class="skippedeven"><td><a href="#m3">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m4">afterTest</a></td><td rowspan="1">1673542519817</td><td rowspan="1">-1673542519817</td></tr><tr class="skippedeven"><td><a href="#m5">beforeClass</a></td><td rowspan="1">1673542519799</td><td rowspan="1">-1673542519799</td></tr><tr class="skippedeven"><td><a href="#m6">beforeMethod</a></td><td rowspan="2">1673542519805</td><td rowspan="2">-1673542519805</td></tr><tr class="skippedeven"><td><a href="#m7">beforeMethod</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.qa.tests.LoginTests</td><td><a href="#m8">invalidUserName</a></td><td rowspan="1">1673542519808</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.qa.tests.LoginTests#invalidUserName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.qa.tests.LoginTests#beforeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>false</td><td>iOS</td><td>16.11</td><td>iPhone 12 Pro</td><td>00008101-001A2C123CDB001E</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Real device architecture is unsupported by the &apos;/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app&apos; application. Make sure the correct deployment target has been selected for its compilation in Xcode. 
+Host info: host: &apos;Nikunjs-MBP.broadband&apos;, ip: &apos;fe80:0:0:0:c80:5d48:db40:ad4d%en0&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app, appium:automationName=XCUITest, appium:bundleId=com.saucelabs.mydemoapp.rn, appium:deviceName=iPhone 12 Pro, appium:newCommandTimeout=180, platformName=IOS, appium:platformVersion=16.11, appium:udid=00008101-001A2C123CDB001E}], desiredCapabilities=Capabilities {app: /Users/nikunjthakur/Desktop..., automationName: XCUITest, bundleId: com.saucelabs.mydemoapp.rn, deviceName: iPhone 12 Pro, newCommandTimeout: 180, platformName: IOS, platformVersion: 16.11, udid: 00008101-001A2C123CDB001E}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:106)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:126)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.tests.LoginTests#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.tests.LoginTests#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.tests.LoginTests#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.tests.LoginTests#afterTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.tests.LoginTests#beforeClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.tests.LoginTests#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.tests.LoginTests#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.qa.tests.LoginTests#invalidUserName</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Real device architecture is unsupported by the &apos;/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app&apos; application. Make sure the correct deployment target has been selected for its compilation in Xcode. 
+Host info: host: &apos;Nikunjs-MBP.broadband&apos;, ip: &apos;fe80:0:0:0:c80:5d48:db40:ad4d%en0&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app, appium:automationName=XCUITest, appium:bundleId=com.saucelabs.mydemoapp.rn, appium:deviceName=iPhone 12 Pro, appium:newCommandTimeout=180, platformName=IOS, appium:platformVersion=16.11, appium:udid=00008101-001A2C123CDB001E}], desiredCapabilities=Capabilities {app: /Users/nikunjthakur/Desktop..., automationName: XCUITest, bundleId: com.saucelabs.mydemoapp.rn, deviceName: iPhone 12 Pro, newCommandTimeout: 180, platformName: IOS, platformVersion: 16.11, udid: 00008101-001A2C123CDB001E}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:106)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:126)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
