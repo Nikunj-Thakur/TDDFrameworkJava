@@ -6,10 +6,10 @@
 
 	<test name="Test">
 		<parameter name="emulator" value="false" />
-		<parameter name="platformName" value="Android" />
-		<parameter name="platformVersion" value="11" />
-		<parameter name="deviceName" value="ABC" /> 
-		<parameter name="udid" value="emulator-5554" /> 
+		<parameter name="platformName" value="iOS" />
+		<parameter name="platformVersion" value="16.11" />
+		<parameter name="deviceName" value="iPhone 12 Pro" /> 
+		<parameter name="udid" value="00008101-001A2C123CDB001E" /> 
 		
 		<!-- AvdId is always == avd.ini.displayname -->
 		<!-- if avd Capability is provided then below -->

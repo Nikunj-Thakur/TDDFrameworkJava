@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 12 11:15:24 GMT 2023</td>
+<td>Started on:</td><td>Thu Jan 12 16:55:18 GMT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19846 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (848 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,131 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeTest()'><b>beforeTest</b><br>Test class: com.qa.tests.LoginTests<br>Parameters: false, iOS, 16.11, iPhone 12 Pro, 00008101-001A2C123CDB001E</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Real device architecture is unsupported by the &apos;/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app&apos; application. Make sure the correct deployment target has been selected for its compilation in Xcode. 
+Host info: host: &apos;Nikunjs-MBP.broadband&apos;, ip: &apos;fe80:0:0:0:c80:5d48:db40:ad4d%en0&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app, appium:automationName=XCUITest, appium:bundleId=com.saucelabs.mydemoapp.rn, appium:deviceName=iPhone 12 Pro, appium:newCommandTimeout=180, platformName=IOS, appium:platformVersion=16.11, appium:udid=00008101-001A2C123CDB001E}], desiredCapabilities=Capabilities {app: /Users/nikunjthakur/Desktop..., automationName: XCUITest, bundleId: com.saucelabs.mydemoapp.rn, deviceName: iPhone 12 Pro, newCommandTimeout: 180, platformName: IOS, platformVersion: 16.11, udid: 00008101-001A2C123CDB001E}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:106)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:126)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454884231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454884231'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Real device architecture is unsupported by the &apos;/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app&apos; application. Make sure the correct deployment target has been selected for its compilation in Xcode. 
+Host info: host: &apos;Nikunjs-MBP.broadband&apos;, ip: &apos;fe80:0:0:0:c80:5d48:db40:ad4d%en0&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app, appium:automationName=XCUITest, appium:bundleId=com.saucelabs.mydemoapp.rn, appium:deviceName=iPhone 12 Pro, appium:newCommandTimeout=180, platformName=IOS, appium:platformVersion=16.11, appium:udid=00008101-001A2C123CDB001E}], desiredCapabilities=Capabilities {app: /Users/nikunjthakur/Desktop..., automationName: XCUITest, bundleId: com.saucelabs.mydemoapp.rn, deviceName: iPhone 12 Pro, newCommandTimeout: 180, platformName: IOS, platformVersion: 16.11, udid: 00008101-001A2C123CDB001E}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:106)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeClass()'><b>beforeClass</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterMethod()'><b>afterMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.beforeMethod()'><b>beforeMethod</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterClass()'><b>afterClass</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+<tr>
+<td title='com.qa.tests.LoginTests.afterTest()'><b>afterTest</b><br>Test class: com.qa.tests.LoginTests</td>
+<td></td>
+<td>-1673542519</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,9 +199,76 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.tests.LoginTests.invalidUserName()'><b>invalidUserName</b><br>Test class: com.qa.tests.LoginTests</td>
-<td></td>
-<td>7</td>
-<td>com.qa.tests.LoginTests@402c4085</td></tr>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Real device architecture is unsupported by the &apos;/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app&apos; application. Make sure the correct deployment target has been selected for its compilation in Xcode. 
+Host info: host: &apos;Nikunjs-MBP.broadband&apos;, ip: &apos;fe80:0:0:0:c80:5d48:db40:ad4d%en0&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app, appium:automationName=XCUITest, appium:bundleId=com.saucelabs.mydemoapp.rn, appium:deviceName=iPhone 12 Pro, appium:newCommandTimeout=180, platformName=IOS, appium:platformVersion=16.11, appium:udid=00008101-001A2C123CDB001E}], desiredCapabilities=Capabilities {app: /Users/nikunjthakur/Desktop..., automationName: XCUITest, bundleId: com.saucelabs.mydemoapp.rn, deviceName: iPhone 12 Pro, newCommandTimeout: 180, platformName: IOS, platformVersion: 16.11, udid: 00008101-001A2C123CDB001E}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:106)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:126)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596997325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596997325'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Real device architecture is unsupported by the &apos;/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app&apos; application. Make sure the correct deployment target has been selected for its compilation in Xcode. 
+Host info: host: &apos;Nikunjs-MBP.broadband&apos;, ip: &apos;fe80:0:0:0:c80:5d48:db40:ad4d%en0&apos;
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Command: [null, newSession {capabilities=[{appium:app=/Users/nikunjthakur/Desktop/TDDFrameworkNik/src/test/resources//app/MyRNDemoApp.app, appium:automationName=XCUITest, appium:bundleId=com.saucelabs.mydemoapp.rn, appium:deviceName=iPhone 12 Pro, appium:newCommandTimeout=180, platformName=IOS, appium:platformVersion=16.11, appium:udid=00008101-001A2C123CDB001E}], desiredCapabilities=Capabilities {app: /Users/nikunjthakur/Desktop..., automationName: XCUITest, bundleId: com.saucelabs.mydemoapp.rn, deviceName: iPhone 12 Pro, newCommandTimeout: 180, platformName: IOS, platformVersion: 16.11, udid: 00008101-001A2C123CDB001E}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.ios.IOSDriver.&lt;init&gt;(IOSDriver.java:106)
+	at com.qa.BaseTest.beforeTest(BaseTest.java:126)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.qa.tests.LoginTests@3f191845</td></tr>
 </table><p>
 </body>
 </html>
