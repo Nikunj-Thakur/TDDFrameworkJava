@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-12T11:15:24 GMT" name="Suite" finished-at="2023-01-12T11:15:44 GMT" duration-ms="19846">
+    <groups>
+    </groups>
+    <test started-at="2023-01-12T11:15:24 GMT" name="Test" finished-at="2023-01-12T11:15:44 GMT" duration-ms="19846">
+      <class name="com.qa.tests.LoginTests">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:24 GMT" name="beforeTest" finished-at="2023-01-12T11:15:34 GMT" duration-ms="10192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:34 GMT" name="beforeClass" finished-at="2023-01-12T11:15:34 GMT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:34 GMT" name="beforeMethod" finished-at="2023-01-12T11:15:35 GMT" duration-ms="668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:35 GMT" name="beforeMethod" finished-at="2023-01-12T11:15:35 GMT" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.qa.tests.LoginTests.invalidUserName()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="invalidUserName()[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:35 GMT" name="invalidUserName" finished-at="2023-01-12T11:15:42 GMT" duration-ms="7412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUserName -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:42 GMT" name="afterMethod" finished-at="2023-01-12T11:15:42 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:42 GMT" name="afterMethod" finished-at="2023-01-12T11:15:43 GMT" duration-ms="1118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidUserName status=SUCCESS method=LoginTests.invalidUserName()[pri:0, instance:com.qa.tests.LoginTests@402c4085] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:43 GMT" name="afterClass" finished-at="2023-01-12T11:15:43 GMT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.qa.tests.LoginTests@402c4085]" started-at="2023-01-12T11:15:43 GMT" name="afterTest" finished-at="2023-01-12T11:15:44 GMT" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.qa.tests.LoginTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

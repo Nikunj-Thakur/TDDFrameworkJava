@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+<listeners>
+<listener class-name="com.qa.listeners.TestListener"/>
+</listeners>
+
+	<test name="Test">
+		<parameter name="emulator" value="false" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="11" />
+		<parameter name="deviceName" value="ABC" /> 
+		<parameter name="udid" value="emulator-5554" /> 
+		
+		<!-- AvdId is always == avd.ini.displayname -->
+		<!-- if avd Capability is provided then below -->
+		<!-- deviceName should be same as AvdId (Pixel_3) [Case Sensitive] in AVD Manager for Android (If everything including Android Studio and AVD is closed) -->
+		<!-- If Android Studio is open and AVD is already running, deviceName should be same as AvdId but here case sensitivity of AvdId is ignored(pixel_3 will also work)-->
+		<!-- If deviceName is there, incorrect value of platformName is not causing any issues -->
+		
+		<!-- if avd Capability is not provided then below -->
+		<!-- It ignores the deviceName completely and looks for platformVersion -->
+		<!-- if Real device and Emulator have same platformVersion, it launched Real Device [may be becuase alphabetically udid of Real Device
+		(2107f8f1) was greater than udid of Emulator (emulator-5554). So Real Device was up on the list of devices connected. It picked whatever was 
+		first in the list -->
+		
+		<!-- udid takes priority over platformVersion. With Real device and emulator connected together having same platformVersion, it launched
+		the correct device based on the udid provided -->
+		
+		<classes>
+			<class name="com.qa.tests.LoginTests">
+				<methods>
+					<include name="invalidUserName"/>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
